@@ -12,7 +12,7 @@ public class TicketMachine {
 
     protected int valor;
     protected int saldo;
-    protected int[] papelMoeda = {2, 5, 10, 20, 50, 100};
+    protected int[] papelMoeda = {2, 5, 10, 20, 50, 100, 200};
 
     public TicketMachine(int valor) {
         this.valor = valor;
@@ -22,12 +22,12 @@ public class TicketMachine {
     public void inserir(int quantia) throws PapelMoedaInvalidaException {
         boolean achou = false;
         for (int i = 0; i < papelMoeda.length && !achou; i++) {
-            if (papelMoeda[1] == quantia) {
+            if (papelMoeda[i] == quantia) {
                 achou = true;
             }
         }
         if (!achou) {
-            throw new PapelMoedaInvalidaException();
+            throw new PapelMoedaInvalidaException("Papel Moeda Inválido");
         }
         this.saldo += quantia;
     }
@@ -36,13 +36,17 @@ public class TicketMachine {
         return saldo;
     }
 
-    public Iterator<Integer> getTroco() {
-        return null;
+    public void solicitarBilhete() {
+        this.imprimir();
+        return this.getTroco();
     }
 
     public String imprimir() throws SaldoInsuficienteException {
         if (saldo < valor) {
-            throw new SaldoInsuficienteException();
+            String result = "*****************\n";
+            result += "*** R$ " + saldo + ",00 ****\n";
+            result += "*****************\n";
+            throw new SaldoInsuficienteException(result);
         }
         String result = "*****************\n";
         result += "*** R$ " + saldo + ",00 ****\n";
