@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: test.java.PapelMoedaTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.059 s <<< FAILURE! - in test.java.PapelMoedaTest
+test.java.PapelMoedaTest.TesteCriacaoPapelMoedaGetQuantidade  Time elapsed: 0.033 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: A quantidade deve ser 5 ==> expected: <10> but was: <5>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:559)
+	at test.java.PapelMoedaTest.TesteCriacaoPapelMoedaGetQuantidade(PapelMoedaTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
