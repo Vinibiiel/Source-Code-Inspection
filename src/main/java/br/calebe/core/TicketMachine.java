@@ -1,7 +1,6 @@
-package main.java;
+package main.java.br.calebe.core;
 
-import main.java.exception.PapelMoedaInvalidaException;
-import main.java.exception.SaldoInsuficienteException;
+import main.java.br.calebe.exception.*;
 import java.util.Iterator;
 
 /**

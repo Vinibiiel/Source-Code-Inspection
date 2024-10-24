@@ -1,4 +1,4 @@
-package main.java;
+package main.java.br.calebe.core;
 /**
  *
  * @author Calebe de Paula Bianchini

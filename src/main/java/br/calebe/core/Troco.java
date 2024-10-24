@@ -1,4 +1,4 @@
-package main.java;
+package main.java.br.calebe.core;
 
 import java.util.Iterator;
 

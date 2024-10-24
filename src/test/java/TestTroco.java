@@ -1,6 +1,6 @@
 package test.java;
 
-import main.java.Troco;
+import main.java.br.calebe.core.Troco;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
