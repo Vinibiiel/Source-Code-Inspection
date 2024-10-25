@@ -1,0 +1,6 @@
+main\java\br\calebe\core\TicketMachine.class
+main\java\br\calebe\exception\PapelMoedaInvalidaException.class
+main\java\br\calebe\core\Troco$TrocoIterator.class
+main\java\br\calebe\core\PapelMoeda.class
+main\java\br\calebe\exception\SaldoInsuficienteException.class
+main\java\br\calebe\core\Troco.class
