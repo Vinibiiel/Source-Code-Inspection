@@ -3,6 +3,9 @@ package main.java.br.calebe.core;
 import main.java.br.calebe.exception.*;
 import java.util.Iterator;
 
+import main.java.br.calebe.exception.PapelMoedaInvalidaException;
+import main.java.br.calebe.exception.SaldoInsuficienteException;
+
 /**
  *
  * @author Calebe de Paula Bianchini

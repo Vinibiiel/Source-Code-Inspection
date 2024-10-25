@@ -5,8 +5,8 @@ import main.java.br.calebe.core.PapelMoeda;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class PapelMoedaTest {
-
+public class TestPapelMoeda {
+    
     @Test
     public void TesteCriacaoPapelMoeda() {
         PapelMoeda papelMoeda = new PapelMoeda(10, 1);
@@ -22,7 +22,7 @@ public class PapelMoedaTest {
     @Test
     public void TesteCriacaoPapelMoedaGetQuantidade() {
         PapelMoeda papelMoeda = new PapelMoeda(2, 5);
-        assertEquals(10, papelMoeda.getQuantidade(), "A quantidade deve ser 5");
+        assertEquals(5, papelMoeda.getQuantidade(), "A quantidade deve ser 5");
     }
 
     @Test
@@ -42,5 +42,4 @@ public class PapelMoedaTest {
         PapelMoeda papelMoeda = new PapelMoeda(-1, -1);
         assertEquals(-1, papelMoeda.getQuantidade(), "A quantidade deve ser -1");
     }
-
 }
